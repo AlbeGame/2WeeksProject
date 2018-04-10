@@ -3,7 +3,7 @@
 public class InputController : MonoBehaviour
 {
     private static InputController _iCtrl;
-    public static InputController CtrlInstance
+    public static InputController ICtrl
     {
         get { return _iCtrl; }
         set { _iCtrl = value; }
@@ -11,16 +11,28 @@ public class InputController : MonoBehaviour
 
     private void Awake()
     {
-        if (InputController.CtrlInstance != null)
+        if (InputController.ICtrl != null)
             DestroyImmediate(this);
         else
-            CtrlInstance = this;
+            ICtrl = this;
     }
 
     // Update is called once per frame
     void Update()
     {
         //Intercept TouchPosition
+        DetectTouch();
+
+        //Intercept MousePosition
+        DetectMouse();
+
+        InputDebug();
+    }
+
+    public bool TouchSensible = true;
+    Vector2? touchPos = null;
+    void DetectTouch()
+    {
         if (TouchSensible)
         {
             if (Input.touchCount > 0)
@@ -28,8 +40,12 @@ public class InputController : MonoBehaviour
             else
                 touchPos = null;
         }
+    }
 
-        //Intercept MousePosition
+    public bool MouseSensible = true;
+    Vector2? mousePos = null;
+    void DetectMouse()
+    {
         if (MouseSensible)
         {
             if (Input.GetMouseButton(0))
@@ -37,16 +53,15 @@ public class InputController : MonoBehaviour
             else
                 mousePos = null;
         }
-
-        InputDebug();
     }
 
-    public bool TouchSensible = true;
-    public bool MouseSensible = true;
-
-    Vector2? touchPos = null;
-    Vector2? mousePos = null;
-    //Return last pointer position (Touch if possibile, than Mouse)
+    #region API
+    /// <summary>
+    /// Return last pointer position (Touch if possibile, than Mouse)
+    /// Relative to Screen position
+    /// Can return null
+    /// </summary>
+    /// <returns></returns>
     public Vector2? GetPointerPosition()
     {
         Vector2? onScreenPosition = null;
@@ -58,7 +73,30 @@ public class InputController : MonoBehaviour
 
         return onScreenPosition;
     }
+
+    /// <summary>
+    /// Return last pointer position (Touch if possibile, than Mouse)
+    /// </summary>
+    /// <returns></returns>
+    public Vector2? GetPointerPositionRaw()
+    {
+        if (touchPos != null)
+            return touchPos;
+
+        if (mousePos != null)
+            return mousePos;
+
+        return null;
+    }
+
+    /// <summary>
+    /// Last pointer position (Touch if possibile, than Mouse)
+    /// Relative to Screen position
+    /// Can be null
+    /// </summary>
     public Vector2? PointerPosition { get { return GetPointerPosition(); } }
+    #endregion
+
     #region Debug
     public GameObject DebugTool;
     void InputDebug()
