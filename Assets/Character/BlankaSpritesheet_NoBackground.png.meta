@@ -1,0 +1,2367 @@
+fileFormatVersion: 2
+guid: 4839b530351d2a4488608e626573d304
+timeCreated: 1523312030
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BlankaSpritesheet_NoBackground_0
+    21300002: BlankaSpritesheet_NoBackground_1
+    21300004: BlankaSpritesheet_NoBackground_2
+    21300006: BlankaSpritesheet_NoBackground_3
+    21300008: BlankaSpritesheet_NoBackground_4
+    21300010: BlankaSpritesheet_NoBackground_5
+    21300012: BlankaSpritesheet_NoBackground_6
+    21300014: BlankaSpritesheet_NoBackground_7
+    21300016: BlankaSpritesheet_NoBackground_8
+    21300018: BlankaSpritesheet_NoBackground_9
+    21300020: BlankaSpritesheet_NoBackground_10
+    21300022: BlankaSpritesheet_NoBackground_11
+    21300024: BlankaSpritesheet_NoBackground_12
+    21300026: BlankaSpritesheet_NoBackground_13
+    21300028: BlankaSpritesheet_NoBackground_14
+    21300030: BlankaSpritesheet_NoBackground_15
+    21300032: BlankaSpritesheet_NoBackground_16
+    21300034: BlankaSpritesheet_NoBackground_17
+    21300036: BlankaSpritesheet_NoBackground_18
+    21300038: BlankaSpritesheet_NoBackground_19
+    21300040: BlankaSpritesheet_NoBackground_20
+    21300042: BlankaSpritesheet_NoBackground_21
+    21300044: BlankaSpritesheet_NoBackground_22
+    21300046: BlankaSpritesheet_NoBackground_23
+    21300048: BlankaSpritesheet_NoBackground_24
+    21300050: BlankaSpritesheet_NoBackground_25
+    21300052: BlankaSpritesheet_NoBackground_26
+    21300054: BlankaSpritesheet_NoBackground_27
+    21300056: BlankaSpritesheet_NoBackground_28
+    21300058: BlankaSpritesheet_NoBackground_29
+    21300060: BlankaSpritesheet_NoBackground_30
+    21300062: BlankaSpritesheet_NoBackground_31
+    21300064: BlankaSpritesheet_NoBackground_32
+    21300066: BlankaSpritesheet_NoBackground_33
+    21300068: BlankaSpritesheet_NoBackground_34
+    21300070: BlankaSpritesheet_NoBackground_35
+    21300072: BlankaSpritesheet_NoBackground_36
+    21300074: BlankaSpritesheet_NoBackground_37
+    21300076: BlankaSpritesheet_NoBackground_38
+    21300078: BlankaSpritesheet_NoBackground_39
+    21300080: BlankaSpritesheet_NoBackground_40
+    21300082: BlankaSpritesheet_NoBackground_41
+    21300084: BlankaSpritesheet_NoBackground_42
+    21300086: BlankaSpritesheet_NoBackground_43
+    21300088: BlankaSpritesheet_NoBackground_44
+    21300090: BlankaSpritesheet_NoBackground_45
+    21300092: BlankaSpritesheet_NoBackground_46
+    21300094: BlankaSpritesheet_NoBackground_47
+    21300096: BlankaSpritesheet_NoBackground_48
+    21300098: BlankaSpritesheet_NoBackground_49
+    21300100: BlankaSpritesheet_NoBackground_50
+    21300102: BlankaSpritesheet_NoBackground_51
+    21300104: BlankaSpritesheet_NoBackground_52
+    21300106: BlankaSpritesheet_NoBackground_53
+    21300108: BlankaSpritesheet_NoBackground_54
+    21300110: BlankaSpritesheet_NoBackground_55
+    21300112: BlankaSpritesheet_NoBackground_56
+    21300114: BlankaSpritesheet_NoBackground_57
+    21300116: BlankaSpritesheet_NoBackground_58
+    21300118: BlankaSpritesheet_NoBackground_59
+    21300120: BlankaSpritesheet_NoBackground_60
+    21300122: BlankaSpritesheet_NoBackground_61
+    21300124: BlankaSpritesheet_NoBackground_62
+    21300126: BlankaSpritesheet_NoBackground_63
+    21300128: BlankaSpritesheet_NoBackground_64
+    21300130: BlankaSpritesheet_NoBackground_65
+    21300132: BlankaSpritesheet_NoBackground_66
+    21300134: BlankaSpritesheet_NoBackground_67
+    21300136: BlankaSpritesheet_NoBackground_68
+    21300138: BlankaSpritesheet_NoBackground_69
+    21300140: BlankaSpritesheet_NoBackground_70
+    21300142: BlankaSpritesheet_NoBackground_71
+    21300144: BlankaSpritesheet_NoBackground_72
+    21300146: BlankaSpritesheet_NoBackground_73
+    21300148: BlankaSpritesheet_NoBackground_74
+    21300150: BlankaSpritesheet_NoBackground_75
+    21300152: BlankaSpritesheet_NoBackground_76
+    21300154: BlankaSpritesheet_NoBackground_77
+    21300156: BlankaSpritesheet_NoBackground_78
+    21300158: BlankaSpritesheet_NoBackground_79
+    21300160: BlankaSpritesheet_NoBackground_80
+    21300162: BlankaSpritesheet_NoBackground_81
+    21300164: BlankaSpritesheet_NoBackground_82
+    21300166: BlankaSpritesheet_NoBackground_83
+    21300168: BlankaSpritesheet_NoBackground_84
+    21300170: BlankaSpritesheet_NoBackground_85
+    21300172: BlankaSpritesheet_NoBackground_86
+    21300174: BlankaSpritesheet_NoBackground_87
+    21300176: BlankaSpritesheet_NoBackground_88
+    21300178: BlankaSpritesheet_NoBackground_89
+    21300180: BlankaSpritesheet_NoBackground_90
+    21300182: BlankaSpritesheet_NoBackground_91
+    21300184: BlankaSpritesheet_NoBackground_92
+    21300186: BlankaSpritesheet_NoBackground_93
+    21300188: BlankaSpritesheet_NoBackground_94
+    21300190: BlankaSpritesheet_NoBackground_95
+    21300192: BlankaSpritesheet_NoBackground_96
+    21300194: BlankaSpritesheet_NoBackground_97
+    21300196: BlankaSpritesheet_NoBackground_98
+    21300198: BlankaSpritesheet_NoBackground_99
+    21300200: BlankaSpritesheet_NoBackground_100
+    21300202: BlankaSpritesheet_NoBackground_101
+    21300204: BlankaSpritesheet_NoBackground_102
+    21300206: BlankaSpritesheet_NoBackground_103
+    21300208: BlankaSpritesheet_NoBackground_104
+    21300210: BlankaSpritesheet_NoBackground_105
+    21300212: BlankaSpritesheet_NoBackground_106
+    21300214: BlankaSpritesheet_NoBackground_107
+    21300216: BlankaSpritesheet_NoBackground_108
+    21300218: BlankaSpritesheet_NoBackground_109
+    21300220: BlankaSpritesheet_NoBackground_110
+    21300222: BlankaSpritesheet_NoBackground_111
+    21300224: BlankaSpritesheet_NoBackground_112
+    21300226: BlankaSpritesheet_NoBackground_113
+    21300228: BlankaSpritesheet_NoBackground_114
+    21300230: BlankaSpritesheet_NoBackground_115
+    21300232: BlankaSpritesheet_NoBackground_116
+    21300234: BlankaSpritesheet_NoBackground_117
+    21300236: BlankaSpritesheet_NoBackground_118
+    21300238: BlankaSpritesheet_NoBackground_119
+    21300240: BlankaSpritesheet_NoBackground_120
+    21300242: BlankaSpritesheet_NoBackground_121
+    21300244: BlankaSpritesheet_NoBackground_122
+    21300246: BlankaSpritesheet_NoBackground_123
+    21300248: BlankaSpritesheet_NoBackground_124
+    21300250: BlankaSpritesheet_NoBackground_125
+    21300252: BlankaSpritesheet_NoBackground_126
+    21300254: BlankaSpritesheet_NoBackground_127
+    21300256: BlankaSpritesheet_NoBackground_128
+    21300258: BlankaSpritesheet_NoBackground_129
+    21300260: BlankaSpritesheet_NoBackground_130
+    21300262: BlankaSpritesheet_NoBackground_131
+    21300264: BlankaSpritesheet_NoBackground_132
+    21300266: BlankaSpritesheet_NoBackground_133
+    21300268: BlankaSpritesheet_NoBackground_134
+    21300270: BlankaSpritesheet_NoBackground_135
+    21300272: BlankaSpritesheet_NoBackground_136
+    21300274: BlankaSpritesheet_NoBackground_137
+    21300276: BlankaSpritesheet_NoBackground_138
+    21300278: BlankaSpritesheet_NoBackground_139
+    21300280: BlankaSpritesheet_NoBackground_140
+    21300282: BlankaSpritesheet_NoBackground_141
+    21300284: BlankaSpritesheet_NoBackground_142
+    21300286: BlankaSpritesheet_NoBackground_143
+    21300288: BlankaSpritesheet_NoBackground_144
+    21300290: BlankaSpritesheet_NoBackground_145
+    21300292: BlankaSpritesheet_NoBackground_146
+    21300294: BlankaSpritesheet_NoBackground_147
+    21300296: BlankaSpritesheet_NoBackground_148
+    21300298: BlankaSpritesheet_NoBackground_149
+    21300300: BlankaSpritesheet_NoBackground_150
+    21300302: BlankaSpritesheet_NoBackground_151
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3064
+        width: 85
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_1
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 3064
+        width: 78
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 3064
+        width: 90
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_3
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 3064
+        width: 95
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_4
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 3064
+        width: 92
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_5
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 3064
+        width: 91
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_6
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 2954
+        width: 91
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_7
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2954
+        width: 91
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_8
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 2954
+        width: 89
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_9
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 2954
+        width: 86
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_10
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2952
+        width: 86
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_11
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2849
+        width: 103
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_12
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2849
+        width: 87
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_13
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 2849
+        width: 80
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_14
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 2849
+        width: 83
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_15
+      rect:
+        serializedVersion: 2
+        x: 379
+        y: 2849
+        width: 99
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_16
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 2849
+        width: 80
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_17
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 2745
+        width: 81
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_18
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 2745
+        width: 91
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_19
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2744
+        width: 81
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_20
+      rect:
+        serializedVersion: 2
+        x: 322
+        y: 2743
+        width: 99
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_21
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2744
+        width: 83
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_22
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2634
+        width: 103
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_23
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 2637
+        width: 87
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_24
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2637
+        width: 84
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_25
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 2638
+        width: 83
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_26
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 2638
+        width: 79
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_27
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 2637
+        width: 86
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_28
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 2501
+        width: 75
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_29
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2507
+        width: 80
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_30
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2524
+        width: 83
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_31
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 2521
+        width: 82
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_32
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 2487
+        width: 69
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_33
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2365
+        width: 102
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_34
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 2364
+        width: 119
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_35
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 2364
+        width: 162
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_36
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 2364
+        width: 156
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_37
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2251
+        width: 99
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_38
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2251
+        width: 146
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_39
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 2251
+        width: 109
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_40
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 2251
+        width: 78
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_41
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 2250
+        width: 99
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_42
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2142
+        width: 138
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_43
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 2142
+        width: 84
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_44
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 2163
+        width: 115
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_45
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 2160
+        width: 171
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_46
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2016
+        width: 143
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_47
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 2004
+        width: 86
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_48
+      rect:
+        serializedVersion: 2
+        x: 245
+        y: 2003
+        width: 116
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_49
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 2027
+        width: 99
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_50
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 2003
+        width: 88
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_51
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1911
+        width: 98
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_52
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1911
+        width: 172
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_53
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1911
+        width: 153
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_54
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1913
+        width: 97
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_55
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1818
+        width: 89
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_56
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 1818
+        width: 77
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_57
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1818
+        width: 135
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_58
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 1818
+        width: 80
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_59
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 1818
+        width: 94
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1703
+        width: 153
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_61
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1703
+        width: 145
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_62
+      rect:
+        serializedVersion: 2
+        x: 316
+        y: 1688
+        width: 94
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_63
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1698
+        width: 135
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_64
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1586
+        width: 103
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_65
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 1585
+        width: 79
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_66
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 1606
+        width: 93
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_67
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 1611
+        width: 84
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_68
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 1580
+        width: 191
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_69
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1453
+        width: 81
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_70
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 1455
+        width: 89
+        height: 97
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_71
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1531
+        width: 80
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_72
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 1460
+        width: 140
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_73
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1457
+        width: 78
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_74
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 1511
+        width: 10
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_75
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 1456
+        width: 78
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_76
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1421
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_77
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 1330
+        width: 116
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_78
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 1334
+        width: 123
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_79
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1392
+        width: 14
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_80
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 1331
+        width: 81
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_81
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1384
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_82
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 1223
+        width: 138
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_83
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 1229
+        width: 156
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_84
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 1306
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_85
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 1231
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_86
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1293
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_87
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 1115
+        width: 123
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_88
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 1111
+        width: 139
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_89
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1158
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_90
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1112
+        width: 114
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_91
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1155
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_92
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 1067
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_93
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 1067
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_94
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 1008
+        width: 75
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_95
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1010
+        width: 75
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_96
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 1009
+        width: 73
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_97
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 989
+        width: 90
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_98
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1039
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_99
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1037
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_100
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1009
+        width: 78
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_101
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1022
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_102
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 1025
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_103
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1016
+        width: 19
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_104
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1022
+        width: 10
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_105
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 1016
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_106
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 1014
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_107
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 1016
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_108
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1007
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_109
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 1006
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_110
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 993
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_111
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 1005
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_112
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1007
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_113
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 999
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_114
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 993
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_115
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 904
+        width: 99
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_116
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 926
+        width: 209
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_117
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 903
+        width: 120
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_118
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 903
+        width: 95
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_119
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 811
+        width: 91
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_120
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 802
+        width: 109
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_121
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 815
+        width: 87
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_122
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 813
+        width: 80
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_123
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 798
+        width: 89
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_124
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 719
+        width: 80
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_125
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 719
+        width: 83
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_126
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 719
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_127
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 719
+        width: 81
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_128
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 719
+        width: 88
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_129
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 719
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_130
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 618
+        width: 81
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_131
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 618
+        width: 80
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_132
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 620
+        width: 83
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_133
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 617
+        width: 84
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_134
+      rect:
+        serializedVersion: 2
+        x: 420
+        y: 616
+        width: 90
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_135
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 511
+        width: 113
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_136
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 511
+        width: 136
+        height: 90
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_137
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 513
+        width: 97
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_138
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 511
+        width: 95
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_139
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 516
+        width: 111
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_140
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 397
+        width: 143
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_141
+      rect:
+        serializedVersion: 2
+        x: 186
+        y: 431
+        width: 153
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_142
+      rect:
+        serializedVersion: 2
+        x: 348
+        y: 435
+        width: 152
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_143
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 296
+        width: 149
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_144
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 292
+        width: 71
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_145
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 358
+        width: 121
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_146
+      rect:
+        serializedVersion: 2
+        x: 383
+        y: 378
+        width: 179
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_147
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 287
+        width: 173
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_148
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 321
+        width: 182
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_149
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 131
+        width: 98
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_150
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 131
+        width: 96
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: BlankaSpritesheet_NoBackground_151
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 131
+        width: 97
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
