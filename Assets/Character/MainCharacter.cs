@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Animator))]
-public class MainCharacter : MonoBehaviour {
-
-    RopeController ropeCtrl;
+[RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
+public class MainCharacter : MonoBehaviour
+{
     Animator animator;
+    Rigidbody2D rigid;
+    UI_Character uICtrl;
+    BallisticProbe balProbe;
+
+    float massCh;
+    public Vector2 JumpSpeed { get; private set; }
 
     AnimationState _animation;
-    AnimationState animation
+    AnimationState animProp
     {
         get { return _animation;}
         set
@@ -20,7 +25,7 @@ public class MainCharacter : MonoBehaviour {
 
     Vector2? pointerPosition { get { return InputController.ICtrl.GetPointerPosition(); } }
     bool _isThrowing;
-    bool IsThrowing
+    bool IsChargin
     {
         get { return _isThrowing; }
         set { _isThrowing = value; }
@@ -28,43 +33,44 @@ public class MainCharacter : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        ropeCtrl = GetComponentInChildren<RopeController>();
         animator = GetComponent<Animator>();
-        animation = AnimationState.Idle;
+        animProp = AnimationState.Idle;
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-        if(pointerPosition != null)
-        {
-            DrawTranjectory();
-        }
-        else if (IsThrowing)
-        {
-            Throw();
-        }
+        rigid = GetComponent<Rigidbody2D>();
+        massCh = rigid.mass;
+
+        uICtrl = GetComponentInChildren<UI_Character>();
+        balProbe = GetComponentInChildren<BallisticProbe>();
+        balProbe.mainCh = this;
 	}
 
-    public GameObject UI_ThrowIndicator;
+    public void ChanrgeJump(Vector2 _direction)
+    {
+        JumpSpeed = _direction / massCh;
+
+        balProbe.IsRunning = true;
+    }
+
+    public void Jump(Vector2 _direction)
+    {
+        balProbe.IsRunning = false;
+        rigid.AddForce(_direction, ForceMode2D.Impulse);
+    }
+
     void DrawTranjectory()
     {
-        IsThrowing = true;
-        animation = AnimationState.CharginThrow;
+        IsChargin = true;
+        animProp = AnimationState.CharginThrow;
 
-        if (!UI_ThrowIndicator.activeSelf)
-            UI_ThrowIndicator.SetActive(true);
-
-        UI_ThrowIndicator.transform.rotation = (pointerPosition ?? default(Vector2)).ToMouseRotation(90) ?? default(Quaternion);
+        uICtrl.DrawParabable();
     }
 
     void Throw()
     {
-        IsThrowing = false;
+        IsChargin = false;
+        animProp = AnimationState.Idle;
 
-        if (UI_ThrowIndicator.activeSelf)
-            UI_ThrowIndicator.SetActive(false);
-
-        animation = AnimationState.Idle;
+        uICtrl.DrawParabable();
     }
+
 }
