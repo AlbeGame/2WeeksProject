@@ -41,7 +41,7 @@ public class MainCharacter : MonoBehaviour
 
         uICtrl = GetComponentInChildren<UI_Character>();
         balProbe = GetComponentInChildren<BallisticProbe>();
-        balProbe.mainCh = this;
+        balProbe.Init(this);
 	}
 
     public void ChanrgeJump(Vector2 _direction)

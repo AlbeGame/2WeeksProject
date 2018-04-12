@@ -381,6 +381,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 8.287478
       objectReference: {fileID: 0}
+    - target: {fileID: 1851994472541154, guid: 5cb145d8fa540484c8b630bfc039f9d2, type: 2}
+      propertyPath: m_TagString
+      value: Wall
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cb145d8fa540484c8b630bfc039f9d2, type: 2}
   m_IsPrefabParent: 0
@@ -422,6 +426,10 @@ Prefab:
     - target: {fileID: 4507133068149508, guid: 5cb145d8fa540484c8b630bfc039f9d2, type: 2}
       propertyPath: m_RootOrder
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1851994472541154, guid: 5cb145d8fa540484c8b630bfc039f9d2, type: 2}
+      propertyPath: m_TagString
+      value: Wall
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5cb145d8fa540484c8b630bfc039f9d2, type: 2}
@@ -595,8 +603,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 981e3eb818dbd4241bb8fa9624f66dae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxLenght: 20
-  mainCh: {fileID: 0}
+  Evaluation: 1
+  MaxLenght: 30
 --- !u!120 &1728771286
 LineRenderer:
   m_ObjectHideFlags: 0
