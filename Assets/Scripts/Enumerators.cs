@@ -4,3 +4,8 @@
     CharginThrow,
     Throwing
 }
+
+public enum SurfaceType
+{
+    Breakable
+}

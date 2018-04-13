@@ -83,13 +83,14 @@ public class BallisticProbe : MonoBehaviour
         RaycastHit2D hit;
         for (int i = 0; i < ProbedParable.KinematicPoints.Count; i++)
         {
-            hit = Physics2D.BoxCast(ProbedParable.KinematicPoints[i], Vector2.one, 0, ProbedParable.InitialVelocity ?? default(Vector2));
+            hit = Physics2D.BoxCast(ProbedParable.KinematicPoints[i], Vector2.one * .5f, 0, ProbedParable.InitialVelocity ?? default(Vector2));
             if (hit.collider == null)
                 continue;
 
             if (hit.collider.tag == "Wall")
             {
-                ProbedParable.KinematicPoints = ProbedParable.KinematicPoints.Take(i+1).ToList();
+                ProbedParable.KinematicPoints = ProbedParable.KinematicPoints.Take(i).ToList();
+                ProbedParable.LastCollision = hit;
                 break;
             }
         }
@@ -105,18 +106,24 @@ public class BallisticProbe : MonoBehaviour
 
         for (int i = 0; i < lineRend.positionCount; i++)
             lineRend.SetPosition(i, ProbedParable.KinematicPoints[i]);
+
+        if (ProbedParable.LastCollision.collider != null && ProbedParable.LastCollision.collider.GetComponent<Surface_Breakable>() != null)
+            lineRend.endColor= Color.red;
+        else
+            lineRend.endColor = Color.blue;
     }
 
     public void Init(MainCharacter _character)
     {
         ProbedParable = new ProbedTrajectory();
+        lineRend.startColor = Color.black;
     }
 
     public class ProbedTrajectory
     {
         public Vector2? InitialVelocity;
         public List<Vector2> KinematicPoints = new List<Vector2>();
-        public RaycastHit2D LastoCollision;
+        public RaycastHit2D LastCollision = new RaycastHit2D();
     }
 
     public enum EvaluationMode
