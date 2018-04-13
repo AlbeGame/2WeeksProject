@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-[RequireComponent(typeof(Animator), typeof(Rigidbody2D))]
+[RequireComponent(typeof(Animator), typeof(Rigidbody2D), typeof(Collider2D))]
 public class MainCharacter : MonoBehaviour
 {
     Animator animator;
@@ -9,6 +9,7 @@ public class MainCharacter : MonoBehaviour
     BallisticProbe balProbe;
 
     float massCh;
+    bool isColliding;
     public Vector2 JumpSpeed { get; private set; }
 
     AnimationState _animation;
@@ -45,6 +46,9 @@ public class MainCharacter : MonoBehaviour
 
     public void ChanrgeJump(Vector2 _direction)
     {
+        if (!isColliding)
+            return;
+
         JumpSpeed = _direction / massCh;
 
         balProbe.IsRunning = true;
@@ -52,6 +56,9 @@ public class MainCharacter : MonoBehaviour
 
     public void Jump(Vector2 _direction)
     {
+        if (!isColliding)
+            return;
+
         balProbe.IsRunning = false;
         rigid.AddForce(_direction, ForceMode2D.Impulse);
     }
@@ -68,4 +75,14 @@ public class MainCharacter : MonoBehaviour
         animProp = AnimationState.Idle;
     }
 
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        isColliding = true;
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        isColliding = false;
+    }
 }
