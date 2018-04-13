@@ -5,7 +5,7 @@ public class MainCharacter : MonoBehaviour
 {
     Animator animator;
     Rigidbody2D rigid;
-    UI_Character uICtrl;
+
     BallisticProbe balProbe;
 
     float massCh;
@@ -39,7 +39,6 @@ public class MainCharacter : MonoBehaviour
         rigid = GetComponent<Rigidbody2D>();
         massCh = rigid.mass;
 
-        uICtrl = GetComponentInChildren<UI_Character>();
         balProbe = GetComponentInChildren<BallisticProbe>();
         balProbe.Init(this);
 	}
@@ -61,16 +60,12 @@ public class MainCharacter : MonoBehaviour
     {
         IsChargin = true;
         animProp = AnimationState.CharginThrow;
-
-        uICtrl.DrawParabable();
     }
 
     void Throw()
     {
         IsChargin = false;
         animProp = AnimationState.Idle;
-
-        uICtrl.DrawParabable();
     }
 
 }

@@ -6,16 +6,12 @@ using System.Linq;
 public class BallisticProbe : MonoBehaviour
 {
     public EvaluationMode Evaluation; 
-    public int MaxLenght = 20;
+    public int MaxLenght = 50;
     int currentLenght;
 
     MainCharacter mainCh;
 
-    ProbedTrajectory UnprobedParable;
-    ProbedTrajectory ProbedParable;
-
-
-    List<Box2DProbe> probes = new List<Box2DProbe>();
+    public ProbedTrajectory ProbedParable { get; private set; }
 
 
     LineRenderer lineRend;
@@ -54,18 +50,9 @@ public class BallisticProbe : MonoBehaviour
         if (IsRunning)
         {
             UpdateTrajectory();
-            UpdateTrajectoryCollision();
-        }
-        else
-        {
-            TurnOffProbes();
-        }
-    }
-
-    private void Update()
-    {
-        if(IsRunning)
+            UpdateCollision();
             RendLine();
+        }
     }
 
     void UpdateTrajectory()
@@ -79,42 +66,32 @@ public class BallisticProbe : MonoBehaviour
         else
             timeStep = Time.fixedDeltaTime;
 
-        if (UnprobedParable.KinematicPoints.Length != currentLenght)
-            UnprobedParable.SetKinematics(new  Vector2[currentLenght]);
+        ProbedParable.KinematicPoints.Clear();
 
         Vector2 position = new Vector2(transform.position.x, transform.position.y);
         Vector2 velocity = mainCh.JumpSpeed;
         for (int i = 0; i < currentLenght; ++i)
         {
-            UnprobedParable.KinematicPoints[i] = position;
+            ProbedParable.KinematicPoints.Add(position);
             position += velocity * timeStep + 0.5f * gravity * timeStep * timeStep;
             velocity += gravity * timeStep;
         }
     }
 
-    void UpdateTrajectoryCollision()
+    void UpdateCollision()
     {
-        //Instanciate brand new set of Probes
-        if(probes.Count == 0)
+        RaycastHit2D hit;
+        for (int i = 0; i < ProbedParable.KinematicPoints.Count; i++)
         {
-            BoxCollider2D probeShape = mainCh.GetComponent<BoxCollider2D>();
-            for (int i = 0; i < MaxLenght; i++)
-            {
-                probes.Add(new GameObject("Box2DProbe_" +i).AddComponent<Box2DProbe>());
-                probes[i].Init(this, probeShape);
-            }
-        }
+            hit = Physics2D.BoxCast(ProbedParable.KinematicPoints[i], Vector2.one, 0, ProbedParable.InitialVelocity ?? default(Vector2));
+            if (hit.collider == null)
+                continue;
 
-        //Check collision along the parabole
-        for (int i = 0; i < UnprobedParable.KinematicPoints.Length; i++)
-        {
-            probes[i].ColliderActive = true;
-            probes[i].transform.position = UnprobedParable.KinematicPoints[i];
-        }
-        //turnoff the unnecessary colliders
-        for (int i = UnprobedParable.KinematicPoints.Length; i < probes.Count; i++)
-        {
-            probes[i].ColliderActive = false;
+            if (hit.collider.tag == "Wall")
+            {
+                ProbedParable.KinematicPoints = ProbedParable.KinematicPoints.Take(i+1).ToList();
+                break;
+            }
         }
     }
 
@@ -123,74 +100,23 @@ public class BallisticProbe : MonoBehaviour
         if (ProbedParable.KinematicPoints == null)
             return;
 
-        if (lineRend.positionCount != ProbedParable.ClosestCollision)
-            lineRend.positionCount = ProbedParable.ClosestCollision;
+        if (lineRend.positionCount != ProbedParable.KinematicPoints.Count)
+            lineRend.positionCount = ProbedParable.KinematicPoints.Count;
 
-        for (int i = 0; i < ProbedParable.ClosestCollision; i++)
+        for (int i = 0; i < lineRend.positionCount; i++)
             lineRend.SetPosition(i, ProbedParable.KinematicPoints[i]);
-    }
-
-    void TurnOffProbes()
-    {
-        if (probes.Count <= 0)
-            return;
-
-        for (int i = 0; i < probes.Count; i++)
-        {
-            if (probes[i].ColliderActive == false)
-                return;
-            probes[i].ColliderActive = false;
-        }
     }
 
     public void Init(MainCharacter _character)
     {
-        mainCh = _character;
-
-        UnprobedParable.SetKinematics(new Vector2[0]);
-        ProbedParable.SetKinematics(new Vector2[0]);
-        ProbedParable.TimeWhenRecorded = Time.time;
+        ProbedParable = new ProbedTrajectory();
     }
 
-    public void NotifyCollision(Box2DProbe other)
-    {
-        for (int i = 0; i < UnprobedParable.KinematicPoints.Length; i++)
-        {
-            if(probes[i] == other)
-            {
-                if(ProbedParable.TimeWhenRecorded < Time.time)
-                {
-                    ProbedParable.ClosestCollision = i;
-                    ProbedParable.SetKinematics(UnprobedParable.KinematicPoints);
-                    ProbedParable.TimeWhenRecorded = Time.time;
-                }
-                else if (i < ProbedParable.ClosestCollision)
-                {
-                    ProbedParable.ClosestCollision = i;
-                    ProbedParable.SetKinematics(UnprobedParable.KinematicPoints);
-                }
-                return;
-            }
-        }
-    }
-
-    public struct ProbedTrajectory
+    public class ProbedTrajectory
     {
         public Vector2? InitialVelocity;
-        public Vector2[] KinematicPoints;
-        public float TimeWhenRecorded;
-        public int ClosestCollision;
-
-        public void SetKinematics(Vector2[] _newKinematics)
-        {
-            KinematicPoints = _newKinematics;
-            ClosestCollision = _newKinematics.Length;
-        }
-
-        public void ResetClosestCollision()
-        {
-            ClosestCollision = KinematicPoints != null ? KinematicPoints.Length : 0;
-        }
+        public List<Vector2> KinematicPoints = new List<Vector2>();
+        public RaycastHit2D LastoCollision;
     }
 
     public enum EvaluationMode
