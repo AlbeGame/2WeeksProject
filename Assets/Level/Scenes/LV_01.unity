@@ -250,6 +250,10 @@ Prefab:
       propertyPath: DragElasticSensibility
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1052433635851662, guid: 38c15a0ac4faf194584799158ddebb86, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 38c15a0ac4faf194584799158ddebb86, type: 2}
   m_IsPrefabParent: 0
@@ -364,6 +368,20 @@ Prefab:
     - target: {fileID: 4268457471810824, guid: c8b7f6ee01c4c2e4a808639af1cea442, type: 2}
       propertyPath: m_RootOrder
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 212428396184418960, guid: c8b7f6ee01c4c2e4a808639af1cea442,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4bff5bc3515240d43afebd90013c39b7,
+        type: 3}
+    - target: {fileID: 4934480831816300, guid: c8b7f6ee01c4c2e4a808639af1cea442, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4934480831816300, guid: c8b7f6ee01c4c2e4a808639af1cea442, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8b7f6ee01c4c2e4a808639af1cea442, type: 2}
