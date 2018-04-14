@@ -15,6 +15,9 @@ public class Surface_Breakable : MonoBehaviour {
         Resistence -= collisionForce.magnitude;
 
         if (Resistence < 0)
-            transform.DOPunchRotation(Vector3.forward * collisionForce.magnitude, .5f).OnComplete(() => Destroy(this.gameObject));
+        {
+            //transform.DOPunchPosition(new Vector3(1, 1, 0) * .1f, .5f);
+            transform.DOPunchRotation(Vector3.forward * collisionForce.magnitude, .5f, 50).OnComplete(() => Destroy(this.gameObject));
+        }
     }
 }
