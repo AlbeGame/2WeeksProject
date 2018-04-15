@@ -1,8 +1,10 @@
 ﻿public enum AnimationState
 {
     Idle = 0,
-    CharginThrow,
-    Throwing
+    ChargeJump,
+    Jumping,
+    Dash,
+    TakingDamage
 }
 
 public enum SurfaceType

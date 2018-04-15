@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 
-[RequireComponent(typeof(LineRenderer))]
 public class BallisticProbe : MonoBehaviour
 {
     public EvaluationMode Evaluation; 
@@ -13,8 +12,6 @@ public class BallisticProbe : MonoBehaviour
 
     public ProbedTrajectory ProbedParable { get; private set; }
 
-
-    LineRenderer lineRend;
     Vector2 gravity;
 
     private bool _isRunning;
@@ -27,7 +24,6 @@ public class BallisticProbe : MonoBehaviour
             if (_isRunning == false)
             {
                 currentLenght = 0;
-                lineRend.positionCount = 0;
             }
         }
     }
@@ -37,8 +33,6 @@ public class BallisticProbe : MonoBehaviour
     void Start()
     {
         gravity = Physics2D.gravity;
-
-        lineRend = GetComponent<LineRenderer>();
 
         mainCh = GetComponentInParent<MainCharacter>();
 
@@ -51,7 +45,6 @@ public class BallisticProbe : MonoBehaviour
         {
             UpdateTrajectory();
             UpdateCollision();
-            RendLine();
         }
     }
 
@@ -83,7 +76,7 @@ public class BallisticProbe : MonoBehaviour
         RaycastHit2D hit;
         for (int i = 0; i < ProbedParable.KinematicPoints.Count; i++)
         {
-            hit = Physics2D.BoxCast(ProbedParable.KinematicPoints[i], Vector2.one * .5f, 0, ProbedParable.InitialVelocity ?? default(Vector2));
+            hit = Physics2D.CircleCast(ProbedParable.KinematicPoints[i], 0.5f, Vector2.zero);
             if (hit.collider == null)
                 continue;
 
@@ -96,27 +89,9 @@ public class BallisticProbe : MonoBehaviour
         }
     }
 
-    void RendLine()
-    {
-        if (ProbedParable.KinematicPoints == null)
-            return;
-
-        if (lineRend.positionCount != ProbedParable.KinematicPoints.Count)
-            lineRend.positionCount = ProbedParable.KinematicPoints.Count;
-
-        for (int i = 0; i < lineRend.positionCount; i++)
-            lineRend.SetPosition(i, ProbedParable.KinematicPoints[i]);
-
-        if (ProbedParable.LastCollision.collider != null && ProbedParable.LastCollision.collider.GetComponent<Surface_Breakable>() != null)
-            lineRend.endColor= Color.red;
-        else
-            lineRend.endColor = Color.blue;
-    }
-
     public void Init(MainCharacter _character)
     {
         ProbedParable = new ProbedTrajectory();
-        lineRend.startColor = Color.black;
     }
 
     public class ProbedTrajectory

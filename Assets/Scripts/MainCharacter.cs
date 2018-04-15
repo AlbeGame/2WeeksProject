@@ -7,10 +7,12 @@ public class MainCharacter : MonoBehaviour
     Rigidbody2D rigid;
 
     BallisticProbe balProbe;
+    MainCh_UI main_UI;
 
     float massCh;
-    bool isColliding;
+    bool isLanded;
     public Vector2 JumpSpeed { get; private set; }
+    public BallisticProbe.ProbedTrajectory Trajectory { get { return balProbe.ProbedParable; } }
 
     AnimationState _animation;
     AnimationState animProp
@@ -25,12 +27,6 @@ public class MainCharacter : MonoBehaviour
     }
 
     Vector2? pointerPosition { get { return InputController.ICtrl.GetPointerPosition(); } }
-    bool _isThrowing;
-    bool IsChargin
-    {
-        get { return _isThrowing; }
-        set { _isThrowing = value; }
-    }
 
 	// Use this for initialization
 	void Start () {
@@ -42,47 +38,48 @@ public class MainCharacter : MonoBehaviour
 
         balProbe = GetComponentInChildren<BallisticProbe>();
         balProbe.Init(this);
+
+        main_UI = GetComponentInChildren<MainCh_UI>();
+        main_UI.Init(this);
 	}
 
     public void ChanrgeJump(Vector2 _direction)
     {
-        if (!isColliding)
+        if (!isLanded)
             return;
 
         JumpSpeed = _direction / massCh;
 
         balProbe.IsRunning = true;
+        main_UI.DisplayTrajectory = true;
+        animProp = AnimationState.ChargeJump;
     }
 
     public void Jump(Vector2 _direction)
     {
-        if (!isColliding)
+        if (!isLanded)
             return;
 
         balProbe.IsRunning = false;
+        main_UI.DisplayTrajectory = false;
+        animProp = AnimationState.Jumping;
+
         rigid.AddForce(_direction, ForceMode2D.Impulse);
     }
 
-    void DrawTranjectory()
+    public void Dash(Vector2 _direction)
     {
-        IsChargin = true;
-        animProp = AnimationState.CharginThrow;
+        animProp = AnimationState.Dash;
     }
-
-    void Throw()
-    {
-        IsChargin = false;
-        animProp = AnimationState.Idle;
-    }
-
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        isColliding = true;
+        isLanded = true;
+        animProp = AnimationState.Idle;
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
-        isColliding = false;
+        isLanded = false;
     }
 }
