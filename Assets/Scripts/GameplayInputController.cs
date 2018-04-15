@@ -53,6 +53,7 @@ public class GameplayInputController : MonoBehaviour
 
         pointerDirection = -controllerPos;
 
+        EvaluateDirection();
         mainCh.ChanrgeJump(pointerDirection ?? default(Vector2));
 
         MoveControllerUI(distanceFromCenter < DeadZoneRadius ? controllerPos : controllerPos.normalized * DeadZoneRadius);
@@ -63,6 +64,14 @@ public class GameplayInputController : MonoBehaviour
         HideController();
 
         mainCh.Jump(pointerDirection ?? default(Vector2));
+    }
+
+    MovementDirections EvaluateDirection()
+    {
+        float angle = Vector2.SignedAngle(mainCh.transform.up, pointerPosition ?? default(Vector2));
+
+        Debug.Log(angle);
+        return MovementDirections.Jumping;
     }
 
     #region UI

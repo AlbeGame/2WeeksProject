@@ -41,7 +41,7 @@ public class MainCh_UI : MonoBehaviour
     void RendLine()
     {
         List<Vector2> kinPositions = mainCh.Trajectory.KinematicPoints;
-        if (kinPositions == null)
+        if (kinPositions.Count <= 0)
             return;
 
         if (lineRend.positionCount != kinPositions.Count)

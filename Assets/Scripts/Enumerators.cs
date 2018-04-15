@@ -7,6 +7,13 @@
     TakingDamage
 }
 
+public enum MovementDirections
+{
+    Right,
+    Left,
+    Jumping
+}
+
 public enum SurfaceType
 {
     Breakable

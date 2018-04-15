@@ -24,19 +24,9 @@ public class BallisticProbe : MonoBehaviour
             if (_isRunning == false)
             {
                 currentLenght = 0;
+                ProbedParable = new ProbedTrajectory();
             }
         }
-    }
-
-
-    // Use this for initialization
-    void Start()
-    {
-        gravity = Physics2D.gravity;
-
-        mainCh = GetComponentInParent<MainCharacter>();
-
-        IsRunning = false;
     }
 
     private void FixedUpdate()
@@ -91,6 +81,11 @@ public class BallisticProbe : MonoBehaviour
 
     public void Init(MainCharacter _character)
     {
+        mainCh = _character;
+
+        gravity = Physics2D.gravity;
+
+        IsRunning = false;
         ProbedParable = new ProbedTrajectory();
     }
 
