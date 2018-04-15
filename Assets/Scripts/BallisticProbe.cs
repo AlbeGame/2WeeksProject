@@ -52,9 +52,13 @@ public class BallisticProbe : MonoBehaviour
             timeStep = Time.fixedDeltaTime;
 
         ProbedParable.KinematicPoints.Clear();
+        ProbedParable.KinematicPoints.TrimExcess();
+
+        Vector2 velocity = mainCh.JumpSpeed;
+        if (velocity == Vector2.zero)
+            return;
 
         Vector2 position = new Vector2(transform.position.x, transform.position.y);
-        Vector2 velocity = mainCh.JumpSpeed;
         for (int i = 0; i < currentLenght; ++i)
         {
             ProbedParable.KinematicPoints.Add(position);
