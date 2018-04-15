@@ -4,6 +4,8 @@ using System.Linq;
 
 public class BallisticProbe : MonoBehaviour
 {
+    public bool Gizmos_Kinematics;
+
     public EvaluationMode Evaluation; 
     public int MaxLenght = 50;
     int currentLenght;
@@ -87,6 +89,19 @@ public class BallisticProbe : MonoBehaviour
 
         IsRunning = false;
         ProbedParable = new ProbedTrajectory();
+    }
+
+    private void OnDrawGizmos()
+    {
+        if (!Gizmos_Kinematics)
+            return;
+
+        Gizmos.color = Color.red;
+        if (IsRunning)
+            foreach (Vector2 point in ProbedParable.KinematicPoints)
+            {
+                Gizmos.DrawWireSphere(point, .5f);
+            }
     }
 
     public class ProbedTrajectory

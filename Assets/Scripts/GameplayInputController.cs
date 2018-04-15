@@ -78,7 +78,6 @@ public class GameplayInputController : MonoBehaviour
     void ShowController()
     {
         IsPointerHolding = true;
-        ToggleGraphic(true);
 
         transform.position = pointerPosition ?? default(Vector2);
     }
@@ -88,7 +87,6 @@ public class GameplayInputController : MonoBehaviour
         IsPointerHolding = false;
 
         Center.transform.localPosition = Vector2.zero;
-        ToggleGraphic(false);
     }
 
     void MoveControllerUI(Vector3 _direction)

@@ -55,14 +55,4 @@ public class MainCh_UI : MonoBehaviour
         else
             lineRend.endColor = Color.black;
     }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        if(DisplayTrajectory)
-            foreach (Vector2 point in mainCh.Trajectory.KinematicPoints)
-            {
-                Gizmos.DrawWireSphere(point, .5f);
-            }
-    }
 }
