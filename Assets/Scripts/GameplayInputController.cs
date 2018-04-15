@@ -43,7 +43,7 @@ public class GameplayInputController : MonoBehaviour
     {
         ShowController();
 
-        mainCh.ChanrgeJump(pointerDirection ?? default(Vector2));
+        mainCh.ChanrgeJump(Vector2.zero, MovementDirections.Jumping);
     }
 
     void OnPointerDrag()
@@ -51,10 +51,32 @@ public class GameplayInputController : MonoBehaviour
         Vector2 controllerPos = new Vector2(pointerPosition.Value.x - transform.position.x, pointerPosition.Value.y - transform.position.y) * DragElasticSensibility;
         distanceFromCenter = controllerPos.magnitude;
 
-        pointerDirection = -controllerPos;
+        pointerDirection = controllerPos;
 
-        EvaluateDirection();
-        mainCh.ChanrgeJump(pointerDirection ?? default(Vector2));
+        MovementDirections dir = EvaluateDirection(controllerPos);
+        switch (dir)
+        {
+            case MovementDirections.Right:
+                {
+                    pointerDirection = mainCh.transform.right;
+                    mainCh.ChargeDash(pointerDirection ?? default(Vector2), dir);
+                }
+                break;
+            case MovementDirections.Left:
+                {
+                    pointerDirection = -mainCh.transform.right;
+                    mainCh.ChargeDash(pointerDirection ?? default(Vector2), dir);
+                }
+                break;
+            case MovementDirections.Jumping:
+                {
+                    pointerDirection = -controllerPos;
+                    mainCh.ChanrgeJump(pointerDirection ?? default(Vector2), dir);
+                }
+                break;
+            default:
+                break;
+        }
 
         MoveControllerUI(distanceFromCenter < DeadZoneRadius ? controllerPos : controllerPos.normalized * DeadZoneRadius);
     }
@@ -66,12 +88,16 @@ public class GameplayInputController : MonoBehaviour
         mainCh.Jump(pointerDirection ?? default(Vector2));
     }
 
-    MovementDirections EvaluateDirection()
+    MovementDirections EvaluateDirection(Vector2 _dir)
     {
-        float angle = Vector2.SignedAngle(mainCh.transform.up, pointerPosition ?? default(Vector2));
+        float angle = Vector2.SignedAngle(mainCh.transform.up, _dir);
 
-        Debug.Log(angle);
-        return MovementDirections.Jumping;
+        if (angle >= 120 || angle <= -120)
+            return MovementDirections.Jumping;
+        else if (angle < 0)
+            return MovementDirections.Left;
+        else
+            return MovementDirections.Right;
     }
 
     #region UI

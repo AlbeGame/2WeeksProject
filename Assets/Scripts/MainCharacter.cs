@@ -12,7 +12,7 @@ public class MainCharacter : MonoBehaviour
     float massCh;
     bool isLanded;
     public Vector2 JumpSpeed { get; private set; }
-    public BallisticProbe.ProbedTrajectory Trajectory { get { return balProbe.ProbedParable; } }
+    public BallisticProbe.ProbedTrajectory Trajectory { get { return balProbe.LastProbedTrajectory; } }
 
     AnimationState _animation;
     AnimationState animProp
@@ -43,14 +43,14 @@ public class MainCharacter : MonoBehaviour
         main_UI.Init(this);
 	}
 
-    public void ChanrgeJump(Vector2 _direction)
+    public void ChanrgeJump(Vector2 _direction, MovementDirections _dir)
     {
         if (!isLanded)
             return;
 
         JumpSpeed = _direction / massCh;
 
-        balProbe.IsRunning = true;
+        balProbe.StartPrediction(_dir);
         main_UI.DisplayTrajectory = true;
         animProp = AnimationState.ChargeJump;
     }
@@ -60,16 +60,33 @@ public class MainCharacter : MonoBehaviour
         if (!isLanded)
             return;
 
-        balProbe.IsRunning = false;
+        balProbe.StopPrediction();
         main_UI.DisplayTrajectory = false;
         animProp = AnimationState.Jumping;
 
         rigid.AddForce(_direction, ForceMode2D.Impulse);
     }
 
+    public void ChargeDash(Vector2 _direction, MovementDirections _dir)
+    {
+        if (!isLanded)
+            return;
+
+        JumpSpeed = _direction / massCh;
+        balProbe.StartPrediction(_dir);
+        main_UI.DisplayTrajectory = true;
+        animProp = AnimationState.ChargeJump;
+    }
+
     public void Dash(Vector2 _direction)
     {
         animProp = AnimationState.Dash;
+
+        balProbe.StopPrediction();
+        main_UI.DisplayTrajectory = false;
+        animProp = AnimationState.Dash;
+
+        rigid.AddForce(_direction, ForceMode2D.Impulse);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

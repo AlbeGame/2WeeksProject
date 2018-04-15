@@ -11,29 +11,18 @@ public class BallisticProbe : MonoBehaviour
     int currentLenght;
 
     MainCharacter mainCh;
+    Rigidbody2D mainRB;
+    CircleCollider2D mainCollider;
 
-    public ProbedTrajectory ProbedParable { get; private set; }
+    MovementDirections currentDir;
+    public ProbedTrajectory LastProbedTrajectory { get; private set; }
 
     Vector2 gravity;
 
-    private bool _isRunning;
-    public bool IsRunning
-    {
-        get { return _isRunning; }
-        set
-        {
-            _isRunning = value;
-            if (_isRunning == false)
-            {
-                currentLenght = 0;
-                ProbedParable = new ProbedTrajectory();
-            }
-        }
-    }
-
+    bool isRunning;
     private void FixedUpdate()
     {
-        if (IsRunning)
+        if (isRunning)
         {
             UpdateTrajectory();
             UpdateCollision();
@@ -45,14 +34,14 @@ public class BallisticProbe : MonoBehaviour
         if(currentLenght < MaxLenght)
             currentLenght++;
 
+        LastProbedTrajectory.KinematicPoints.Clear();
+        LastProbedTrajectory.KinematicPoints.TrimExcess();
+
         float timeStep;
         if (Evaluation == EvaluationMode.BySpace)
             timeStep = .5f / mainCh.JumpSpeed.magnitude;
         else
             timeStep = Time.fixedDeltaTime;
-
-        ProbedParable.KinematicPoints.Clear();
-        ProbedParable.KinematicPoints.TrimExcess();
 
         Vector2 velocity = mainCh.JumpSpeed;
         if (velocity == Vector2.zero)
@@ -61,25 +50,36 @@ public class BallisticProbe : MonoBehaviour
         Vector2 position = new Vector2(transform.position.x, transform.position.y);
         for (int i = 0; i < currentLenght; ++i)
         {
-            ProbedParable.KinematicPoints.Add(position);
-            position += velocity * timeStep + 0.5f * gravity * timeStep * timeStep;
-            velocity += gravity * timeStep;
+            LastProbedTrajectory.KinematicPoints.Add(position);
+            position += velocity * timeStep;
+            if(currentDir == MovementDirections.Jumping)
+            {
+                position += 0.5f * gravity * timeStep * timeStep;
+                velocity += gravity * timeStep;
+            }
+            if (currentDir != MovementDirections.Jumping && mainCollider.sharedMaterial != null)
+            {
+                float staticFriction = mainCollider.sharedMaterial.friction * 9.8f * timeStep;
+                velocity += staticFriction < velocity.magnitude ? -velocity.normalized * staticFriction : -velocity;
+            }
         }
     }
 
     void UpdateCollision()
     {
         RaycastHit2D hit;
-        for (int i = 0; i < ProbedParable.KinematicPoints.Count; i++)
+
+        for (int i = 0; i < LastProbedTrajectory.KinematicPoints.Count; i++)
         {
-            hit = Physics2D.CircleCast(ProbedParable.KinematicPoints[i], 0.5f, Vector2.zero);
+            hit = Physics2D.CircleCast(LastProbedTrajectory.KinematicPoints[i], 0.5f, Vector2.zero);
+
             if (hit.collider == null)
                 continue;
 
             if (hit.collider.tag == "Wall")
             {
-                ProbedParable.KinematicPoints = ProbedParable.KinematicPoints.Take(i).ToList();
-                ProbedParable.LastCollision = hit;
+                LastProbedTrajectory.KinematicPoints = LastProbedTrajectory.KinematicPoints.Take(i).ToList();
+                LastProbedTrajectory.LastCollision = hit;
                 break;
             }
         }
@@ -88,11 +88,31 @@ public class BallisticProbe : MonoBehaviour
     public void Init(MainCharacter _character)
     {
         mainCh = _character;
+        mainRB = mainCh.GetComponent<Rigidbody2D>();
+        mainCollider = mainCh.GetComponent<CircleCollider2D>();
 
         gravity = Physics2D.gravity;
 
-        IsRunning = false;
-        ProbedParable = new ProbedTrajectory();
+        isRunning = false;
+        LastProbedTrajectory = new ProbedTrajectory();
+    }
+
+    public void StartPrediction(MovementDirections _dir)
+    {
+        if (!isRunning)
+        {
+            isRunning = true;
+            currentLenght = 0;
+            LastProbedTrajectory = new ProbedTrajectory();
+        }
+
+        if(currentDir != _dir)
+            currentDir = _dir;
+    }
+
+    public void StopPrediction()
+    {
+        isRunning = false;
     }
 
     private void OnDrawGizmos()
@@ -101,11 +121,13 @@ public class BallisticProbe : MonoBehaviour
             return;
 
         Gizmos.color = Color.red;
-        if (IsRunning)
-            foreach (Vector2 point in ProbedParable.KinematicPoints)
+        if (isRunning)
+        {
+            foreach (Vector2 point in LastProbedTrajectory.KinematicPoints)
             {
                 Gizmos.DrawWireSphere(point, .5f);
             }
+        }
     }
 
     public class ProbedTrajectory

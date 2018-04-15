@@ -610,6 +610,31 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 50446743721958618, guid: c8b7f6ee01c4c2e4a808639af1cea442,
+        type: 2}
+      propertyPath: m_LinearDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50446743721958618, guid: c8b7f6ee01c4c2e4a808639af1cea442,
+        type: 2}
+      propertyPath: m_AngularDrag
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 50446743721958618, guid: c8b7f6ee01c4c2e4a808639af1cea442,
+        type: 2}
+      propertyPath: m_GravityScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 58106650482625286, guid: c8b7f6ee01c4c2e4a808639af1cea442,
+        type: 2}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: e9f8c1536d4e64848b611465c8de7c10, type: 2}
+    - target: {fileID: 114155750705151590, guid: c8b7f6ee01c4c2e4a808639af1cea442,
+        type: 2}
+      propertyPath: Gizmos_Kinematics
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8b7f6ee01c4c2e4a808639af1cea442, type: 2}
   m_IsPrefabParent: 0
