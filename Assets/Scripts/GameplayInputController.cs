@@ -53,10 +53,11 @@ public class GameplayInputController : MonoBehaviour
         Vector2 controllerPos = new Vector2(transform.position.x - pointerPosition.Value.x, pointerPosition.Value.y - transform.position.y) * DragElasticSensibility;
         distanceFromCenter = controllerPos.magnitude;
 
+        diretion = EvaluateDirection(new Vector2(mainCh.transform.position.x - pointerPosition.Value.x, pointerPosition.Value.y - mainCh.transform.position.y));
+
         pointerDirection = distanceFromCenter < DeadZoneRadius ? controllerPos : controllerPos.normalized * DeadZoneRadius;
         pointerDirection *= ForceMultiplier;
 
-        diretion = EvaluateDirection(controllerPos);
         switch (diretion)
         {
             case MovementDirections.Right:
@@ -73,7 +74,7 @@ public class GameplayInputController : MonoBehaviour
                 break;
             case MovementDirections.Jumping:
                 {
-                    pointerDirection *= -1;
+                    pointerDirection.y *= -1;
                     mainCh.ChanrgeJump(pointerDirection, diretion);
                 }
                 break;
