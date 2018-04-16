@@ -9,7 +9,7 @@ public class MainCharacter : MonoBehaviour
     Rigidbody2D rigid;
 
     BallisticProbe balProbe;
-    MainCh_UI main_UI;
+    MainChGraphicController main_UI;
 
     float massCh;
     bool isLanded;
@@ -41,8 +41,8 @@ public class MainCharacter : MonoBehaviour
         balProbe = GetComponentInChildren<BallisticProbe>();
         balProbe.Init(this);
 
-        main_UI = GetComponentInChildren<MainCh_UI>();
-        main_UI.Init(this);
+        main_UI = GetComponentInChildren<MainChGraphicController>();
+        main_UI.Init(this, GetComponentInChildren<SpriteRenderer>());
 	}
 
     public void ChanrgeJump(Vector2 _direction, MovementDirections _dir)
@@ -53,8 +53,12 @@ public class MainCharacter : MonoBehaviour
         JumpSpeed = _direction / massCh;
 
         balProbe.StartPrediction(_dir);
+
         main_UI.DisplayTrajectory = true;
+        main_UI.OrientCharacter(Vector2.SignedAngle(transform.up, _direction) > 0 ? true: false);
+
         animProp = AnimationState.ChargeJump;
+
     }
 
     public void Jump(Vector2 _direction)
@@ -75,8 +79,12 @@ public class MainCharacter : MonoBehaviour
             return;
 
         JumpSpeed = _direction / massCh;
+
         balProbe.StartPrediction(_dir);
+
         main_UI.DisplayTrajectory = true;
+        main_UI.OrientCharacter(Vector2.SignedAngle(transform.up, _direction) > 0 ? true: false);
+
         animProp = AnimationState.ChargeJump;
     }
 

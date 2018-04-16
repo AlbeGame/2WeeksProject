@@ -50,7 +50,7 @@ public class GameplayInputController : MonoBehaviour
 
     void OnPointerDrag()
     {
-        Vector2 controllerPos = new Vector2(pointerPosition.Value.x - transform.position.x, pointerPosition.Value.y - transform.position.y) * DragElasticSensibility;
+        Vector2 controllerPos = new Vector2(transform.position.x - pointerPosition.Value.x, pointerPosition.Value.y - transform.position.y) * DragElasticSensibility;
         distanceFromCenter = controllerPos.magnitude;
 
         pointerDirection = distanceFromCenter < DeadZoneRadius ? controllerPos : controllerPos.normalized * DeadZoneRadius;

@@ -245,15 +245,6 @@ Prefab:
       propertyPath: mainCh
       value: 
       objectReference: {fileID: 581063796}
-    - target: {fileID: 114106843735886168, guid: 38c15a0ac4faf194584799158ddebb86,
-        type: 2}
-      propertyPath: DragElasticSensibility
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1052433635851662, guid: 38c15a0ac4faf194584799158ddebb86, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 38c15a0ac4faf194584799158ddebb86, type: 2}
   m_IsPrefabParent: 0
@@ -610,31 +601,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-    - target: {fileID: 50446743721958618, guid: c8b7f6ee01c4c2e4a808639af1cea442,
-        type: 2}
-      propertyPath: m_LinearDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50446743721958618, guid: c8b7f6ee01c4c2e4a808639af1cea442,
-        type: 2}
-      propertyPath: m_AngularDrag
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 50446743721958618, guid: c8b7f6ee01c4c2e4a808639af1cea442,
-        type: 2}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 58106650482625286, guid: c8b7f6ee01c4c2e4a808639af1cea442,
-        type: 2}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 6200000, guid: e9f8c1536d4e64848b611465c8de7c10, type: 2}
-    - target: {fileID: 114155750705151590, guid: c8b7f6ee01c4c2e4a808639af1cea442,
-        type: 2}
-      propertyPath: Gizmos_Kinematics
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c8b7f6ee01c4c2e4a808639af1cea442, type: 2}
   m_IsPrefabParent: 0
@@ -690,6 +656,11 @@ Prefab:
     - target: {fileID: 1973907134839484, guid: 02583221111f8034d9cb9880424c580b, type: 2}
       propertyPath: m_TagString
       value: Wall
+      objectReference: {fileID: 0}
+    - target: {fileID: 61576454481008048, guid: 02583221111f8034d9cb9880424c580b,
+        type: 2}
+      propertyPath: m_Material
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 02583221111f8034d9cb9880424c580b, type: 2}

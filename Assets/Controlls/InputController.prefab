@@ -171,8 +171,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45145f25a5a6fd344b346fe781cbf673, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DragElasticSensibility: 1
-  DeadZoneRadius: 0.5
+  DragElasticSensibility: 2
+  ForceMultiplier: 10
+  DeadZoneRadius: 1
   Background: {fileID: 1211921960040814}
   Center: {fileID: 1300451121241412}
   mainCh: {fileID: 0}

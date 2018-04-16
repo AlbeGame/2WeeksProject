@@ -2,10 +2,11 @@
 using System.Collections.Generic;
 
 [RequireComponent(typeof(LineRenderer))]
-public class MainCh_UI : MonoBehaviour
+public class MainChGraphicController : MonoBehaviour
 {
     MainCharacter mainCh;
     LineRenderer lineRend;
+    SpriteRenderer spriteRend;
 
     bool _displayTrajectory;
     public bool DisplayTrajectory {
@@ -23,12 +24,18 @@ public class MainCh_UI : MonoBehaviour
         }
     }
 
-    public void Init(MainCharacter _mainCh)
+    public void Init(MainCharacter _mainCh, SpriteRenderer _mainGraphic)
     {
         mainCh = _mainCh;
+        spriteRend = _mainGraphic;
         lineRend = GetComponent<LineRenderer>();
         lineRend.startColor = Color.gray;
         DisplayTrajectory = false;
+    }
+
+    public void OrientCharacter(bool _toRight)
+    {
+        spriteRend.flipX = _toRight;
     }
 
     private void LateUpdate()
