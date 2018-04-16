@@ -3,6 +3,7 @@
 public class GameplayInputController : MonoBehaviour
 {
     public float DragElasticSensibility = .5f;
+    public float ForceMultiplier = 10f;
     public float DeadZoneRadius = .5f;
     public GameObject Background;
     public GameObject Center;
@@ -20,7 +21,8 @@ public class GameplayInputController : MonoBehaviour
 	}
 
     Vector2? pointerPosition { get { return InputController.ICtrl.PointerPosition; } }
-    Vector2? pointerDirection = null;
+    Vector2 pointerDirection;
+    MovementDirections diretion = MovementDirections.Right;
     float distanceFromCenter;
 
     private void Update()
@@ -51,41 +53,55 @@ public class GameplayInputController : MonoBehaviour
         Vector2 controllerPos = new Vector2(pointerPosition.Value.x - transform.position.x, pointerPosition.Value.y - transform.position.y) * DragElasticSensibility;
         distanceFromCenter = controllerPos.magnitude;
 
-        pointerDirection = controllerPos;
+        pointerDirection = distanceFromCenter < DeadZoneRadius ? controllerPos : controllerPos.normalized * DeadZoneRadius;
+        pointerDirection *= ForceMultiplier;
 
-        MovementDirections dir = EvaluateDirection(controllerPos);
-        switch (dir)
+        diretion = EvaluateDirection(controllerPos);
+        switch (diretion)
         {
             case MovementDirections.Right:
                 {
-                    pointerDirection = mainCh.transform.right;
-                    mainCh.ChargeDash(pointerDirection ?? default(Vector2), dir);
+                    pointerDirection = Vector2.right * pointerDirection.magnitude;
+                    mainCh.ChargeDash(pointerDirection, diretion);
                 }
                 break;
             case MovementDirections.Left:
                 {
-                    pointerDirection = -mainCh.transform.right;
-                    mainCh.ChargeDash(pointerDirection ?? default(Vector2), dir);
+                    pointerDirection = -Vector2.right * pointerDirection.magnitude;
+                    mainCh.ChargeDash(pointerDirection, diretion);
                 }
                 break;
             case MovementDirections.Jumping:
                 {
-                    pointerDirection = -controllerPos;
-                    mainCh.ChanrgeJump(pointerDirection ?? default(Vector2), dir);
+                    pointerDirection *= -1;
+                    mainCh.ChanrgeJump(pointerDirection, diretion);
                 }
                 break;
             default:
                 break;
         }
 
-        MoveControllerUI(distanceFromCenter < DeadZoneRadius ? controllerPos : controllerPos.normalized * DeadZoneRadius);
+        MoveControllerUI(pointerDirection);
     }
 
     void OnPointerUp()
     {
         HideController();
 
-        mainCh.Jump(pointerDirection ?? default(Vector2));
+        switch (diretion)
+        {
+            case MovementDirections.Right:
+                mainCh.Dash(pointerDirection);
+                break;
+            case MovementDirections.Left:
+                mainCh.Dash(pointerDirection);
+                break;
+            case MovementDirections.Jumping:
+                mainCh.Jump(pointerDirection);
+                break;
+            default:
+                break;
+        }
     }
 
     MovementDirections EvaluateDirection(Vector2 _dir)

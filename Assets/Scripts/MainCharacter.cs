@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using System.Collections;
+using DG.Tweening;
 
 [RequireComponent(typeof(Animator), typeof(Rigidbody2D), typeof(Collider2D))]
 public class MainCharacter : MonoBehaviour

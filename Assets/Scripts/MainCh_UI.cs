@@ -31,7 +31,6 @@ public class MainCh_UI : MonoBehaviour
         DisplayTrajectory = false;
     }
 
-
     private void LateUpdate()
     {
         if(DisplayTrajectory)
