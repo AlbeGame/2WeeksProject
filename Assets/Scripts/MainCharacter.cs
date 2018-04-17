@@ -58,7 +58,6 @@ public class MainCharacter : MonoBehaviour
         main_UI.OrientCharacter(Vector2.SignedAngle(transform.up, _direction) > 0 ? true: false);
 
         animProp = AnimationState.ChargeJump;
-
     }
 
     public void Jump(Vector2 _direction)

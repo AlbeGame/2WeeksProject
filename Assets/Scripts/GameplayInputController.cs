@@ -53,7 +53,7 @@ public class GameplayInputController : MonoBehaviour
         Vector2 controllerPos = new Vector2(transform.position.x - pointerPosition.Value.x, pointerPosition.Value.y - transform.position.y) * DragElasticSensibility;
         distanceFromCenter = controllerPos.magnitude;
 
-        diretion = EvaluateDirection(new Vector2(mainCh.transform.position.x - pointerPosition.Value.x, pointerPosition.Value.y - mainCh.transform.position.y));
+        diretion = EvaluateDirection(new Vector2(pointerPosition.Value.x - mainCh.transform.position.x, pointerPosition.Value.y - mainCh.transform.position.y));
 
         pointerDirection = distanceFromCenter < DeadZoneRadius ? controllerPos : controllerPos.normalized * DeadZoneRadius;
         pointerDirection *= ForceMultiplier;
