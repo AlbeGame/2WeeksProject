@@ -69,7 +69,10 @@ public class BallisticProbe : MonoBehaviour
     {
         RaycastHit2D hit;
 
-        for (int i = 0; i < LastProbedTrajectory.KinematicPoints.Count; i++)
+        if (LastProbedTrajectory.KinematicPoints.Count <= 0)
+            return;
+
+        for (int i = 1; i < LastProbedTrajectory.KinematicPoints.Count; i++)
         {
             hit = Physics2D.CircleCast(LastProbedTrajectory.KinematicPoints[i], 0.5f, Vector2.zero);
 

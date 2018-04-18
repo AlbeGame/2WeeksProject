@@ -98,6 +98,11 @@ public class MainCharacter : MonoBehaviour
         rigid.AddForce(_direction, ForceMode2D.Impulse);
     }
 
+    public void Damage()
+    {
+        main_UI.Blink(Color.clear);
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         isLanded = true;
@@ -106,6 +111,25 @@ public class MainCharacter : MonoBehaviour
 
     private void OnCollisionExit2D(Collision2D collision)
     {
+        isLanded = false;
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag != "Pool")
+            return;
+        Debug.Log("Enter");
+
+        isLanded = true;
+        animProp = AnimationState.Idle;
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.tag != "Pool")
+            return;
+        Debug.Log("Exit");
+
         isLanded = false;
     }
 }

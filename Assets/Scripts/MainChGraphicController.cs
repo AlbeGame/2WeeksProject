@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using DG.Tweening;
 
 [RequireComponent(typeof(LineRenderer))]
 public class MainChGraphicController : MonoBehaviour
@@ -36,6 +37,26 @@ public class MainChGraphicController : MonoBehaviour
     public void OrientCharacter(bool _toRight)
     {
         spriteRend.flipX = _toRight;
+    }
+
+    public void Blink(Color _color)
+    {
+        spriteRend.DOBlendableColor(_color, .2f).OnComplete(() =>
+        {
+            spriteRend.DOBlendableColor(Color.white, .2f).OnComplete(() =>
+            {
+                spriteRend.DOBlendableColor(_color, .2f).OnComplete(() =>
+                {
+                    spriteRend.DOBlendableColor(Color.white, .2f).OnComplete(() =>
+                    {
+                        spriteRend.DOBlendableColor(_color, .2f).OnComplete(() =>
+                        {
+                            spriteRend.DOBlendableColor(Color.white, .2f);
+                        });
+                    });
+                });
+            });
+        });
     }
 
     private void LateUpdate()
